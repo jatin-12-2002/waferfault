@@ -8,8 +8,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Upgrade pip and install the project dependencies
-RUN pip install --upgrade pip==23.2.1
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip==23.2.1 --verbose
+RUN pip install -r requirements.txt --verbose
 
 # Copy the rest of the application files
 COPY . .
